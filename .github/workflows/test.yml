@@ -30,7 +30,8 @@ jobs:
             echo "my_email secret is not set!"
             echo "Go to Settings > Secrets > Actions and add it."
             exit 1
-          elsemy_email is configured"
+          else 
+            echo "my_email is configured"
           fi
 
           if [ -z "$password_b_day" ]; then
