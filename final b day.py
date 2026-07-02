@@ -3,8 +3,9 @@ import pandas as pd
 import smtplib as smtp
 import datetime as dt
 import random
-my_email = "testfreakgame@gmail.com"
-password = "lmdq oqbd lgrx qgll"
+import os
+my_email = os.environ.get("my_email")
+password = os.environ.get("password_b_day")
 # 1. Update the birthdays.csv
 df = pd.read_csv("birthdays.csv")
 # 2. Check if today matches a birthday in the birthdays.csv
